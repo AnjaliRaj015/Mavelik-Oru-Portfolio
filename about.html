@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT | MAVELI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+   
+    <div class="menu" >
+      <nav id="main-menu" class="menu__nav">
+        <ul class="menu__list r-list" data-aos="fade-up">
+          <li class="menu__group" role="none">
+            <a href="index.html" class="menu__link r-link">Home</a>
+          </li>
+          <li class="menu__group" role="none">
+            <a href="about.html" class="menu__link r-link">About me</a>
+          </li>
+          <li class="menu__group" role="none">
+            <a href="gallery.html" class="menu__link r-link">Gallery</a>
+          </li>
+          <li class="menu__group" role="none">
+            <a href="contact.html" class="menu__link r-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu__toggle r-button" type="button" aria-controls="main-menu" aria-expanded="false">
+        <span class="menu__hamburger m-hamburger">
+          <span class="m-hamburger__label">
+            <span class="menu__toggle-hint screen-reader"></span>
+          </span>
+        </span>
+      </button>
+    </div>
+    <nav class="main-menu" data-aos="fade-left">
+        <ul>
+          <li>
+            <a href="gallery.html">
+              <span class="nav-text">- Gallery</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="contact.html">
+              <span class="nav-text">- Contact</span>
+            </a>
+          </li>
+  
+        </ul>
+  
+        <ul class="logout">
+          <li>
+            <a href="index.html">
+              <span class="nav-text">&lt;&lt; Home</span>
+            </a>
+          </li>
+        </ul>
+     </nav>
+    <div class="about-section">
+      <h1 class="about-title" data-aos="fade-down">About</h1>
+        <div class="about-text" data-aos="fade-up">
+            <p>I am Mahabali, aka. <a href="https://en.wikipedia.org/wiki/Mahabali" style="color: rgb(104, 6, 6);">Bali Chakravarthi</a>, <a href="https://en.wikipedia.org/wiki/Mahabali" style="color: rgb(104, 6, 6);">Indrasenan</a>, <a href="https://en.wikipedia.org/wiki/Mahabali" style="color: rgb(104, 6, 6);">Maveli</a>. I am primarily associated with the festival of <a href="https://en.wikipedia.org/wiki/Onam">Onam</a> celebrated in the southern Indian state of <a href="https://en.wikipedia.org/wiki/Kerala">Kerala</a>. My story is narrated in the ancient Hindu scriptures, primarily in texts like the <a href="https://en.wikipedia.org/wiki/Vishnu_Purana">"Vishnu Purana"</a> and the <a href="https://en.wikipedia.org/wiki/Bhagavad_Gita">"Bhagavata Purana."</a> </p>
+<br>
+            <p>I am depicted as a virtuous and powerful king who ruled over a prosperous kingdom. My devotion and piety earned me the blessings and favor of the gods, which led to my kingdom flourishing under my rule. However, my growing power and influence began to concern <a href="https://en.wikipedia.org/wiki/Indra">Lord Indra</a>, the king of the heavens, who felt that I might eventually challenge his supremacy.</p>
+<br>
+            <p>In order to curb my power, <a href="https://en.wikipedia.org/wiki/Vishnu">Lord Vishnu</a>, the preserver and protector in Hinduism, took on the form of a Brahmin dwarf named <a href="https://en.wikipedia.org/wiki/Vamana">Vamana</a> and approached me for a boon. I granted him a wish, and he requested only as much land as he could cover in three steps. As I agreed, Vamana suddenly grew to an enormous size and covered the entire universe in just three steps.</p>
+<br>
+            <p>In an act of humility and devotion, I offered my own head for the third step, which pushed me to the netherworld. Lord Vishnu was pleased with my humility and granted me the boon of being able to visit my kingdom once a year. This event is celebrated as <a href="https://en.wikipedia.org/wiki/Onam">Onam</a>, a major harvest festival in Kerala, where people create elaborate flower carpets, participate in traditional games, and enjoy festive feasts to commemorate my return.</p>
+<br>
+            <p>My story teaches important lessons about humility, devotion, and the transient nature of power. I am remembered as a righteous and benevolent ruler whose sacrifice continues to be celebrated and cherished by generations.
+        </div>
+    <div class="gallery" data-aos="flip-left">
+        <img src="https://sandysthattukada.files.wordpress.com/2017/08/bali.jpg?w=600" alt="Herd of horses">
+        <img src="https://irisholidays.com/keralatourism/wp-content/uploads/2020/03/mahabali-vamana-onam-1024x768.gif" alt="Baby Elephant">
+        <img src="https://irisholidays.com/keralatourism/wp-content/uploads/2020/03/pulikali-1024x768.gif" alt="Koi Fish">
+        <img src="https://www.amritsartemples.in/wp-content/uploads/2012/11/vishnu-with-mahalakshmi-Beautiful-images-Photos-Pictures.jpg" alt="Ibis Bird">
+        <img src="https://hindupad.com/wp-content/uploads/Thrikkakara-Vamana-Moorthy-Temple-1024x768.jpg" alt="Lemur">
+        <img src="https://live.staticflickr.com/65535/51411947616_35173a54c5_b.jpg" alt="Berber Monkeys">
+    </div>
+    </div>
+    <script>
+       // vanta animation
+       document.onreadystatechange = function () {
+            var loader = document.getElementById("loader");
+            if (document.readyState !== "complete") {
+                loader.style.display = "flex";
+            } else {
+                loader.style.display = "none";
+            }
+        };
+        window.addEventListener("load", function () {
+            setTimeout(removeLoader, 9000); // set delay for 2 seconds
+
+            function removeLoader() {
+                const loader = document.getElementById("loader");
+                if (loader) {
+                    loader.style.display = "none";
+                }
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   <script src="script.js"></script>
+</body>
+
+</html>

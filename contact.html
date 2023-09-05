@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | MAVELI</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+  <div class="menu" >
+    <nav id="main-menu" class="menu__nav">
+      <ul class="menu__list r-list" data-aos="fade-up">
+        <li class="menu__group" role="none">
+          <a href="index.html" class="menu__link r-link">Home</a>
+        </li>
+        <li class="menu__group" role="none">
+          <a href="about.html" class="menu__link r-link">About me</a>
+        </li>
+        <li class="menu__group" role="none">
+          <a href="gallery.html" class="menu__link r-link">Gallery</a>
+        </li>
+       
+        <li class="menu__group" role="none">
+          <a href="contact.html" class="menu__link r-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="menu__toggle r-button" type="button" aria-controls="main-menu" aria-expanded="false">
+      <span class="menu__hamburger m-hamburger">
+        <span class="m-hamburger__label">
+          <span class="menu__toggle-hint screen-reader"></span>
+        </span>
+      </span>
+    </button>
+  </div>
+  <nav class="main-menu">
+      <ul class="logout">
+        <li>
+          <a href="index.html">
+            <span class="nav-text">&lt;&lt; Home</span>
+          </a>
+        </li>
+      </ul>
+   </nav>
+    <div class="contact">
+    <form data-aos="zoom-in" class="form" action="https://formspree.io/f/mbjqyepy" method="post" data-form>
+        <div class="title">CONTACT <br><span>I visit during the Thiruvonam day of chingam month every year!</span></div>
+        <input class="input" name="name" placeholder="Full Name" type="text">
+        <input class="input" name="email" placeholder="Email" type="email">
+        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        <div class="login-with">
+          <div class="button-log"><b><a href="@maveli23" style="text-decoration: none; color: black;">t</a></b></div>
+          <div class="button-log">
+           <a href="maveli@paathalam.com"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+              <path d="M47 34.837V52h7.533C56.448 52 58 50.448 58 48.533V29.486L47 34.837zM47 32l11-7.333v-5.426c0-1.914-.812-3.781-2.325-4.953-2.336-1.809-5.515-1.673-7.665.151L47 15.232V32zM19.814 33.822L32 41 44.349 33.726 43.443 18.023 32 27 20.718 18.149zM17.153 32.102v-16.75L15.99 14.44c-2.15-1.823-5.329-1.961-7.664-.151C6.812 15.46 6 17.328 6 19.243v5.424L17.153 32.102zM6 29.486v19.047C6 50.448 7.552 52 9.467 52H17V34.837L6 29.486z"></path>
+              </svg></a>
+          </div>
+          <div class="button-log">
+           <a href="MahabaliIndrasenan"> <svg class="icon" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"></path></svg>
+           </a> </div>
+        </div>
+        <button class="button-confirm" type="submit">Swoooosh →</button>
+      </form>
+    </div>
+    <script>
+      // vanta animation
+      document.onreadystatechange = function () {
+           var loader = document.getElementById("loader");
+           if (document.readyState !== "complete") {
+               loader.style.display = "flex";
+           } else {
+               loader.style.display = "none";
+           }
+       };
+       window.addEventListener("load", function () {
+           setTimeout(removeLoader, 9000); // set delay for 2 seconds
+
+           function removeLoader() {
+               const loader = document.getElementById("loader");
+               if (loader) {
+                   loader.style.display = "none";
+               }
+           }
+       });
+   </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
